@@ -24,6 +24,9 @@ function randombg(){
 
   user_name=localStorage.getItem("user_name");
   document.getElementById("user_name").innerHTML="Welcome - " + user_name + "!!";
+
+  password=localStorage.getItem("password");
+  document.getElementById("password").innerHTML="This is your Passcode - " + password ;
  
   function addRoom(){
 room_name = document.getElementById("room_name").value;
@@ -54,3 +57,4 @@ localStorage.setItem("room_name" , Name);
 window.location="lets-chat_page.html"
 
 }
+
